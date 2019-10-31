@@ -1,0 +1,16 @@
+html {
+  background-image: linear-gradient(to right, #39375b, #5f6769);
+}
+
+#myCanvas {
+  border: dashed 5px black;
+  background-color: #eae9e9;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  width: 80%;
+  height: 80%;
+}
