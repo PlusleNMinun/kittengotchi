@@ -2,15 +2,50 @@ html {
   background-image: linear-gradient(to right, #39375b, #5f6769);
 }
 
-#myCanvas {
-  border: dashed 5px black;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: dashed 5px #000;
   background-color: #eae9e9;
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin:auto;
   width: 80%;
   height: 80%;
+}
+
+.default-img {
+  height: 400px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.grey {
+  background-color: grey;
 }
