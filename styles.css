@@ -12,6 +12,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(3, 33.33%);
+  grid-template-areas:
+  "name name name money cat cat cat cat"
+  "happiness happiness health health cat cat cat cat"
+  "button1 button1 button2 button2 cat cat cat cat";
   border: dashed 5px #000;
   background-color: #eae9e9;
   position: absolute;
@@ -26,48 +30,47 @@ h1 {
 
 .cat-name {
   background-color: red;
-  grid-column: 1/4;
+  grid-area: name;
 }
 
 .green {
   background-color: green;
-  grid-column: 1/3;
+  grid-area: happiness;
 }
 
 .yellow {
   background-color: yellow;
-  grid-column: 3/5;
+  grid-area: health;
 }
 
 .pink {
   background-color: pink;
-  grid-column: 1/3;
+  grid-area: button1;
 }
 
 .money {
   background-color: blue;
+  grid-area: money;
 }
 
 .cat-img-container {
-  margin: 0;
   padding: 0;
-  grid-column: 5/-1;
-  grid-row: 1/-1;
-  align-items: center;
-}
-
-.default-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  /* I NEED THIS FIXED */
+  margin: 0;
+  grid-area: cat;
+  align-self: center;
+  justify-self: center;
   width: 75%;
   height: 75%;
-  padding: 0;
-  display: block;
 }
 
 .grey {
   background-color: grey;
-  grid-column: 3/5;
+  grid-area: button2;
+}
+
+.default-img {
+  /* align-self: center;
+  justify-self: center; */
+  width: 100%;
+  height: 100%;
 }
